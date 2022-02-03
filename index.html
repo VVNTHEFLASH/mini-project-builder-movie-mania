@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head-1">
+                <div class="square">
+                    <div class="arrow-right">
+                    </div>
+                </div>
+                <div class="head-2">
+                    <label>ProGrad</label>
+                </div>
+            </div>
+            <div class="head-3">
+                <select name="lang" id="lang">
+                    <option id="english" value="en" name="language" onclick="fetchByLanguage('en')">English</option>
+                    <option id="tamil" value="ta" name="language" onclick="fetchByLanguage('ta')">Tamil</option>
+                    <option id="Telugu" value="te" name="language" onclick="fetchByLanguage('te')">Telugu</option>
+                    <option id="Kanadam" value="kn" name="language" onclick="fetchByLanguage('kn')">Kannada</option>
+                    <option id="Malayalam" value="ml" name="language" onclick="fetchByLanguage('ml')">Malayalam</option>
+                </select>
+                <label class="btn">Home</label>
+                <label onclick="popular()" class="btn">Popular</label>
+                <label onclick="upcoming()" class="btn">Upcoming</label>
+            </div>
+        </header>
+        <main class="grid">
+            <!-- lets push content here -->
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
