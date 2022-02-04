@@ -12,9 +12,9 @@ function popular() {
     .then(response => {
         var movies = response.data.results;
         console.log(movies);
-        // movies.map(movie => {
-        //     console.log(movie.id);
-        // })
+        movies.map(movie => {
+            console.log(movie.id);
+        })
         getData(movies);
     })
     .catch(err => {
